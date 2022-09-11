@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
 import ByeWorld from './components/ByeWorld';
+import GreetWorld from './components/GreetWorld';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </a>
         < HelloWorld />
         < ByeWorld />
+        < GreetWorld name= 'Piccoro' edad ='42'/>
       </header>
     </div>
   );
