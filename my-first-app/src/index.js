@@ -1,12 +1,17 @@
-/**
- * 1. import react
- * 2. render on DOM
- * 3. select id where the component will render
- * 4. paint the screen the constant Hello World in the divi with id root
- */
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-import React from 'react'; 
-import ReactDOM from 'react-dom'; 
-const HolaMundo = <h1>Hello World React RUBEN!</h1>
-const root =  document.getElementById('root'); 
-ReactDOM.render(HolaMundo, root); 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
