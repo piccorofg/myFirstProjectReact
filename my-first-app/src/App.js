@@ -22,7 +22,7 @@ function App() {
         </a>
         < HelloWorld />
         < ByeWorld />
-        < GreetWorld name= 'Piccoro' edad ='42'/>
+        < GreetWorld name= 'Piccoro' age ='42'/>
       </header>
     </div>
   );
