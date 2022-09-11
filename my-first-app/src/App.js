@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
-import ByeHelloWorld from './components/ByeHelloWorld';
+import ByeWorld from './components/ByeWorld';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           Learn React
         </a>
         < HelloWorld />
-        < ByeHelloWorld />
+        < ByeWorld />
       </header>
     </div>
   );

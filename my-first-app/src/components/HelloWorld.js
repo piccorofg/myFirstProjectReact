@@ -4,7 +4,7 @@ export default function HelloWorld () {
     return (
         <div>
             <h1>Hello World Component</h1>
-            <h2>Freddy Guzman</h2>
+            <h2>Welcome Freddy Guzman</h2>
         </div>
     )
 }
