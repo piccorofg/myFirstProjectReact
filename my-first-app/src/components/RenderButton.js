@@ -6,11 +6,12 @@ export default function RenderButton(props) {
 
     // Assignment by destructuring
     const { userInfo, greetfn }  = props;
+    //const { name }  = userInfo;  ---->  greetfn(name)
 
     console.log(userInfo);
     return(
         <div>
-            <button type="button" onClick={() => props.greetfn(userInfo.name) }>I'm a button to Greeting</button>
+            <button type="button" onClick={() => greetfn(userInfo.name) }>I'm a button to Greeting</button>
         </div>
     );
 }
