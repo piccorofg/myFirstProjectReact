@@ -3,6 +3,7 @@ import './App.css';
 import HelloWorld from './components/HelloWorld';
 import ByeWorld from './components/ByeWorld';
 import GreetWorld from './components/GreetWorld';
+import RenderButton from './components/RenderButton';
 
 function App() {
 
@@ -13,6 +14,10 @@ function App() {
     age: 42,
     color: 'blue'
   }
+
+  const greetfn = (name) => { 
+    alert( 'Hi '+ name +' from App.js!' )
+  } 
 
   return (
     <div className="App">
@@ -32,6 +37,7 @@ function App() {
         < HelloWorld userInfo = { user }/>
         < ByeWorld />
         < GreetWorld name= { userName } age = {ageUserName } />
+        < RenderButton greetfn = { greetfn } userInfo = { user }/>
       </header>
     </div>
   );
