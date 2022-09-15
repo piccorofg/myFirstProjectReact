@@ -8,10 +8,13 @@ export default function RenderButton(props) {
     const { userInfo, greetfn }  = props;
     //const { name }  = userInfo;  ---->  greetfn(name)
 
+    //Props by default
+    const { name = 'No Name' }  = userInfo;
+
     console.log(userInfo);
     return(
         <div>
-            <button type="button" onClick={() => greetfn(userInfo.name) }>I'm a button to Greeting</button>
+            <button type="button" onClick={() => greetfn(name) }>I'm a button to Greeting</button>
         </div>
     );
 }
