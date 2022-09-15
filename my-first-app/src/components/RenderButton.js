@@ -9,12 +9,12 @@ export default function RenderButton(props) {
     //const { name }  = userInfo;  ---->  greetfn(name)
 
     //Props by default
-    const { name = 'No Name' }  = userInfo;
+    const { name = 'No Name', age = 0 }  = userInfo;
 
     console.log(userInfo);
     return(
         <div>
-            <button type="button" onClick={() => greetfn(name) }>I'm a button to Greeting</button>
+            <button type="button" onClick={() => greetfn(name, age) }>I'm a button to Greeting</button>
         </div>
     );
 }

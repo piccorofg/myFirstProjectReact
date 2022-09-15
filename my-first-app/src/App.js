@@ -9,14 +9,18 @@ function App() {
 
   const userName = "Freddy Guzman";
   const ageUserName = 42;
+  
   const user = {
     name: "Freddy Guzman Array",
     age: 42,
     color: 'blue'
   }
 
-  const greetfn = (name) => { 
+  const greetfn = (name, age) => { 
     alert( 'Hi '+ name +' from App.js!' )
+
+    //Template Strings
+    console.log(`Hi ${ name } you are ${ age } years old `);
   } 
 
   return (
