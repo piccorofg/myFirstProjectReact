@@ -5,6 +5,15 @@ import ByeWorld from './components/ByeWorld';
 import GreetWorld from './components/GreetWorld';
 
 function App() {
+
+  const userName = "Freddy Guzman";
+  const ageUserName = 42;
+  const user = {
+    name: "Freddy Guzman Array",
+    age: 42,
+    color: 'blue'
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,9 +29,9 @@ function App() {
         >
           Learn React
         </a>
-        < HelloWorld />
+        < HelloWorld userInfo = { user }/>
         < ByeWorld />
-        < GreetWorld name= 'Piccoro' age ='42'/>
+        < GreetWorld name= { userName } age = {ageUserName } />
       </header>
     </div>
   );
